@@ -811,3 +811,227 @@ h6 {
 .program__accordeon-text {
     display: none;
 }
+
+/* ========================  BLOG  ======================== */
+/* ========================  BLOG  ======================== */
+
+.blog {
+    padding-bottom: 210px;
+}
+.blog__heading {
+    margin-bottom: 60px;
+}
+.blog__title-box {
+    display: flex;
+    justify-content: space-between;
+}
+.blog__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.blog__content-item {
+    transition: all .3s;
+    border-radius: 4px;
+}
+.blog__content-item:hover {
+    box-shadow: 0 0 10px 10px rgba(85, 86, 91, 0.08);
+}
+.blog__content-item:hover .blog__content-btn {
+    color: #FF3F3A;
+}
+.blog__content-img {
+    border-radius: 4px;
+    position: relative;
+}
+.blog__content-img img {
+    width: 100%;
+}
+.blog__content-categories {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 1px 8px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.blog__content-inner {
+    padding: 10px;
+}
+.blog__content-categories_podcast::before {
+    content: "";
+    background: url("../images/icons/podcast-icon.svg") no-repeat;
+    padding-right: 20px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.blog__content-categories_podcast::after {
+    content: "Podcast";
+}
+.blog__content-categories_video::before {
+    content: "";
+    background: url("../images/icons/play-mini.svg") no-repeat;
+    padding-right: 20px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.blog__content-categories_video::after {
+    content: "Video";
+}
+.blog__content-categories_article::before {
+    content: "";
+    background: url("../images/icons/article-icon.svg") no-repeat;
+    padding-right: 20px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.blog__content-categories_article::after {
+    content: "Article";
+}
+.blog__content-info {
+    margin: 6px 0 8px;
+    display: flex;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+}
+.blog__info-tag {
+    font-weight: 700;
+    margin-right: 12px;
+}
+.blog__info-data {
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+    text-align: center;
+}
+.blog__info-data img {
+    margin-right: 4px;
+}
+.blog__info-time {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    text-align: center;
+}
+.blog__info-time img {
+    margin-right: 4px;
+}
+.blog__content-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+.blog__content-text {
+    margin-bottom: 16px;
+}
+.blog__content-btn {
+    font-weight: 700;
+    color: #1E212C;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+}
+.blog__content-btn::after {
+    content: "";
+    background: url("../images/icons/arrow-right.svg");
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+/* ========================  MAP  ======================== */
+/* ========================  MAP  ======================== */
+
+.map {
+    padding-bottom: 180px;
+}
+.map__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.map__heading {
+    margin-bottom: 40px;
+}
+.map__contacts {
+    margin-bottom: 48px;
+}
+.map__contacts-item {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 24px;
+}
+.map__contacts-item:last-child {
+    margin-bottom: 24px;
+}
+.map__contacts-item_gmail::before {
+    content: "";
+    background: url("../images/icons/chat-icon.svg");
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.map__contacts-item_phone::before {
+    content: "";
+    background: url("../images/icons/phone-icon.svg");
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.map__contacts-item_adress::before {
+    content: "";
+    background: url("../images/icons/mark-icon.svg");
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.map__contacts-text {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+    color: #787A80;
+}
+.map__contacts-subtext {
+    font-size: 18px;
+    line-height: 150%;
+    color: #1E212C;
+}
+.map__socials-title {
+    margin-bottom: 25px;
+}
+.map__socials-box {
+    display: flex;
+}
+.map__socials-item {    
+    margin-right: 32px;
+}
+.map__socials-item:last-child {    
+    margin-right: 0;
+}
+.map__socials-link path {
+    transition: all .3s;
+}
+.map__socials-link:hover path {
+    fill: #FF3F3A;
+    transform: scale(1.05);
+}
+.map__inner-geo {
+    box-shadow: 0 0 5px 5px rgba(85, 86, 91, 0.2);
+    border-radius: 4px; 
+}
