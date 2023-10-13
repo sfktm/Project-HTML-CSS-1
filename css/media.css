@@ -1,0 +1,24 @@
+/* ========================  Медиазапросы  ======================== */
+/* ========================  Медиазапросы  ======================== */
+
+@media (max-width: 1020px) {
+    .header__logo {
+        margin-right: 20px;
+    }
+    .header__nav {
+        margin: auto;
+    }
+    .header__nav-item {
+        margin-right: 10px;
+    }
+    .header__nav-item:last-child {
+        margin-right: 0;
+    }
+    .header__btn {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 920px) {
+
+}
