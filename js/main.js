@@ -1,5 +1,6 @@
 $(function () {
 
+
     var mixer = mixitup('.directions__content-box');
 
     $('.directions__filter-btn').on('click', function () {
@@ -8,12 +9,41 @@ $(function () {
     })
 
 
+
     $('.team__slider').slick({
         arrows: false,
         slidesToShow: 4,
         infinite: true,
         draggable: false,
         waitForAnimate: false,
+        responsive: [
+            {
+                breakpoint: 1150,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    draggable: true,
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    draggable: true,
+                    slidesToShow: 1,
+                },
+            },
+        ]
     })
 
     $('.team__arrow-prev').on('click', function() {
@@ -32,6 +62,14 @@ $(function () {
         waitForAnimate: false,
         dots: true,
         appendDots: $('.test__dots'),
+        responsive: [
+            {
+                breakpoint: 650,
+                settings: {
+                    draggable: true,
+                },
+            },
+        ]
     })
 
     $('.test__arrow-prev').on('click', function() {
@@ -41,6 +79,9 @@ $(function () {
     $('.test__arrow-next').on('click', function() {
         $('.test__slider').slick('slickNext')
     })
+
+
+
 
 
     /*$('.program__accordeon-btn').on('click', function (e) {
@@ -60,6 +101,30 @@ $(function () {
             $(this).children('.program__accordeon-text').slideDown()
         }
 
+    })
+
+
+    /* ========================  MEDIA  ======================== */
+    /* ========================  MEDIA  ======================== */
+
+    $('.burger, .overlay').on('click', function() {
+        $('.header__top').toggleClass('header__top_open')
+        $('.overlay').toggleClass('overlay_show')
+        $('.burger').toggleClass('burger-menu')
+        $('.burger').toggleClass('burger-shut')
+    })
+
+    setInterval(() => {
+        if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top_open') === false) {
+            $('.burger').addClass('burger_scroll')
+        } else {
+            $('.burger').removeClass('burger_scroll')
+        }
+    }, 0)
+
+
+    $('.footer__head_slide').on('click', function () {   
+        $(this).next().slideToggle()
     })
 
 })
